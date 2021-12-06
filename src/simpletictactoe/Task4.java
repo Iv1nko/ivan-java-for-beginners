@@ -23,15 +23,15 @@ class Task4 {
 
         while (true) {
             System.out.println("Enter coordinates");
-            String govnojuy = scanner.nextLine();
-            int coord1 = (int)govnojuy.charAt(0) - 49;
-            int coord2 = (int)govnojuy.charAt(2) - 49;
+            String printX = scanner.nextLine();
+            int coord1 = (int)printX.charAt(0) - 49;
+            int coord2 = (int)printX.charAt(2) - 49;
 
-            if (govnojuy.length() != 3) {
+            if (printX.length() != 3) {
                 System.out.println("You should enter numbers!");
                 continue;
             }
-            if (govnojuy.charAt(0) - 49 < 0 || govnojuy.charAt(0) - 49 > 2 || govnojuy.charAt(2) - 49 < 0 || govnojuy.charAt(2) - 49 > 2) {
+            if (printX.charAt(0) - 49 < 0 || printX.charAt(0) - 49 > 2 || printX.charAt(2) - 49 < 0 || printX.charAt(2) - 49 > 2) {
                 System.out.println("Coordinates should be from 1 to 3!");
                 continue;
             }
@@ -39,7 +39,7 @@ class Task4 {
                 System.out.println("This cell is occupied! Choose another one!");
                 continue;
             }
-            arr[coord1][coord2] = 'x';
+            arr[coord1][coord2] = 'X';
             break;
         }
 
