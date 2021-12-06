@@ -1,7 +1,5 @@
 package simpletictactoe;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 class Task2 {
     public static void main(String[] args) {
@@ -28,15 +26,5 @@ class Task2 {
             System.out.println("| " + arr[i][0] + " " + arr[i][1] + " " + arr[i][2] + " |");
         }
         System.out.println("---------");
-
-        if ((arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2])
-            || (arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2])
-            || (arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2])
-            || (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0])
-            || (arr[0][1] == arr[1][1] && arr[1][1] == arr[2][1])
-            || (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2])
-            || (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0])
-
-
     }
 }
